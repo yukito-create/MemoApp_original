@@ -1,19 +1,28 @@
 import { View, StyleSheet } from "react-native"
-import { router } from "expo-router"
+import { router, useNavigation } from "expo-router"
+import { useEffect } from "react"
 
-import Header from "../../components/Header"
 import MemoListItem from "../../components/MemoListItem"
 import CircleButton from "../../components/CircleButton"
 import Icon from "../../components/Icon"
+import LogOutButton from "../../components/LogOutButton"
 
 const handlePress = (): void => {
-  router.push("/memo/create")
+  router.replace("/memo/create")
 }
 
 const List = (): React.JSX.Element  => {
+  const navigation = useNavigation()
+
+  useEffect(() => {
+    navigation.setOptions({
+      headerBackVisible: false,
+      headerRight: () => { return <LogOutButton /> }
+    })
+  }, [])
+
   return (
     <View style={styles.container}>
-      <Header />
       <View>
         <MemoListItem />
         <MemoListItem />
