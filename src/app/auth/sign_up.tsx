@@ -3,21 +3,19 @@ import { View, Text, TextInput, StyleSheet } from "react-native"
 import Header from "../../components/Header"
 import Button from "../../components/Button"
 
-const LogIn = (): React.JSX.Element => {
+const SignUp = (): React.JSX.Element => {
   return (
     <View style={styles.container}>
       <Header />
 
       <View style={styles.inner}>
-        <Text style={styles.title}>Log In</Text>
+        <Text style={styles.title}>Sign Up</Text>
         <TextInput style={styles.input} value="Email address" />
         <TextInput style={styles.input} value="Password" />
-
         <Button label="Submit" />
-
         <View style={styles.footer}>
-          <Text style={styles.footerText}>Not registered?</Text>
-          <Text style={styles.footerLink}>Sign up here!</Text>
+          <Text style={styles.footerText}>Already registered?</Text>
+          <Text style={styles.footerLink}>Log in.</Text>
         </View>
       </View>
     </View>
@@ -63,4 +61,4 @@ const styles = StyleSheet.create({
   }
 })
 
-export default LogIn
+export default SignUp
