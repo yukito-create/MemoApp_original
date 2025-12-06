@@ -21,7 +21,7 @@ const handlePress = (bodyText: string): void => {
   })
   .then((docRef) => {
     console.log("success", docRef.id)
-    router.back()
+    router.replace("/memo/list")
   })
   .catch((error) => {
     console.log(error)

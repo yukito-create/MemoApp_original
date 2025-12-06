@@ -11,7 +11,7 @@ import { db, auth } from "../../config"
 import { type Memo } from "../../../types/memo"
 
 const handlePress = (): void => {
-  router.replace("/memo/create")
+  router.push("/memo/create")
 }
 
 const List = (): React.JSX.Element  => {
