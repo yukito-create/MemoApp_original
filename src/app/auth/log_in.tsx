@@ -68,7 +68,7 @@ const LogIn = (): React.JSX.Element => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#F0F4F8"
+    backgroundColor: "#f5f5f5"
   },
   inner: {
     paddingVertical: 24,
@@ -99,8 +99,9 @@ const styles = StyleSheet.create({
   },
   footerLink: {
     fontSize: 14,
+    fontWeight: "bold",
     lineHeight: 24,
-    color: "#467FD3"
+    color: "#000000"
   }
 })
 
