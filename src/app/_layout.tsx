@@ -6,7 +6,7 @@ const Layout = (): React.JSX.Element => {
       backgroundColor: "#242424"
     },
     headerTintColor: "#ffffff",
-    headerTitle: "InTRUTH.",
+    headerTitle: "InTruth.",
     headerBackTitle: "Back",
     headerTitleStyle: {
       fontSize: 22,
